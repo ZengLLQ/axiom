@@ -115,4 +115,4 @@ npm run build
 ---
 
 ## 📄 License
-Apache-2.0
+MIT License — Copyright (c) 2026 ZengLLQ / Axiom Contributors. See [LICENSE](LICENSE) for details.
