@@ -1,0 +1,22 @@
+# Version control exclusions for Axiom
+node_modules/
+dist/
+dist-electron/
+.cache/
+*.log
+
+# Build artifacts
+!apps/desktop/build/icon.png
+
+# Julia artifacts & depot
+.julia/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+axiom.db
+*.db
+
+# Environment & OS
+.env
+.DS_Store
+Thumbs.db

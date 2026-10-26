@@ -1,0 +1,22 @@
+{
+  "name": "axiom",
+  "version": "1.0.0",
+  "description": "Scientific AI Laboratory — Physics-Informed Neural Networks and Differential Systems",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix apps/web run dev",
+    "build": "npm --prefix apps/web run build",
+    "desktop:pack": "npm --prefix apps/desktop run pack",
+    "desktop:build:win": "npm --prefix apps/desktop run dist:win",
+    "desktop:build:mac": "npm --prefix apps/desktop run dist:mac",
+    "test:web": "npm --prefix apps/web test",
+    "test:julia:core": "julia packages/scientific-core/test/runtests.jl",
+    "test:julia:api": "julia services/api/test/runtests.jl",
+    "test": "npm run test:web && npm run test:julia:core && npm run test:julia:api",
+    "seed": "julia scripts/seed_examples.jl",
+    "start:api": "julia services/api/src/AxiomAPI.jl"
+  },
+  "keywords": ["sciml", "pinn", "julia", "neural-pde", "machine-learning"],
+  "author": "Axiom Scientific AI Team",
+  "license": "MIT"
+}
